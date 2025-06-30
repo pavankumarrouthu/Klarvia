@@ -14,7 +14,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hello! I'm Klarzo, your AI mental wellness companion. I'm here to listen and support you. How are you feeling today?",
+      text: "Hello! I'm Klarvia, your AI mental wellness companion. I'm here to listen and support you. How are you feeling today?",
       sender: 'bot',
       timestamp: new Date()
     }
@@ -96,7 +96,7 @@ const Chatbot = () => {
                 <Heart className="w-5 h-5 text-purple-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-white">Klarzo AI Companion</h3>
+                <h3 className="font-semibold text-white">Klarvia AI Companion</h3>
                 <p className="text-xs text-purple-100">Here to listen & support</p>
               </div>
             </div>
