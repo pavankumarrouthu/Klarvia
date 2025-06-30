@@ -8,7 +8,11 @@ const HeroSection = () => {
         <div className="animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white border border-purple-200 rounded-full px-4 py-2 mb-8 shadow-sm">
-            <Heart className="w-4 h-4 text-purple-500" />
+            <img 
+              src="/lovable-uploads/fbaeef8a-089a-43b4-bbd1-ec4c39ebde39.png" 
+              alt="Klarvia Logo" 
+              className="w-4 h-4"
+            />
             <span className="text-sm text-purple-600 font-medium">Mental wellness, reimagined</span>
           </div>
 
@@ -20,7 +24,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Klarzo AI Therapist is here to listen. Experience a complete mental 
+            Klarvia AI Therapist is here to listen. Experience a complete mental 
             health journey with our 3-step approach: self-assessment, AI therapy, 
             and expert support when you need it most.
           </p>
@@ -33,7 +37,7 @@ const HeroSection = () => {
             </button>
             <button className="border border-purple-300 text-purple-600 font-semibold px-8 py-4 rounded-full hover:bg-purple-50 transition-all duration-300 flex items-center space-x-2 text-lg">
               <MessageCircle className="w-5 h-5" />
-              <span>Talk to Klarzo AI</span>
+              <span>Talk to Klarvia AI</span>
             </button>
           </div>
 
