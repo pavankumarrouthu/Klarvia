@@ -27,13 +27,13 @@ const ApproachSection = () => {
   ];
 
   return (
-    <section id="approach" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="approach" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Three-Step <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Approach</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Our Three-Step <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Approach</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We've designed a comprehensive system to support your mental health journey at every 
             stage, from self-help to professional intervention when needed.
           </p>
@@ -47,23 +47,23 @@ const ApproachSection = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex-1">
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div className="bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-700">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center">
                       <step.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="text-sm text-purple-600 font-medium">Step {index + 1}</div>
-                      <h3 className="text-2xl font-bold text-gray-900">{step.title}</h3>
+                      <div className="text-sm text-purple-400 font-medium">Step {index + 1}</div>
+                      <h3 className="text-2xl font-bold text-white">{step.title}</h3>
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 mb-4 text-lg">{step.description}</p>
-                  <p className="text-gray-500 mb-6">{step.details}</p>
+                  <p className="text-gray-300 mb-4 text-lg">{step.description}</p>
+                  <p className="text-gray-400 mb-6">{step.details}</p>
                   
                   <div className="grid grid-cols-2 gap-3">
                     {step.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-gray-600">
+                      <div key={featureIndex} className="flex items-center text-sm text-gray-300">
                         <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mr-3"></div>
                         {feature}
                       </div>
@@ -73,12 +73,12 @@ const ApproachSection = () => {
               </div>
 
               <div className="flex-1">
-                <div className="w-full h-80 bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center">
+                <div className="w-full h-80 bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-2xl flex items-center justify-center border border-gray-700">
                   <div className="text-center">
                     <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                       <step.icon className="w-10 h-10 text-white" />
                     </div>
-                    <p className="text-lg font-semibold text-gray-700">
+                    <p className="text-lg font-semibold text-gray-300">
                       {step.title}
                     </p>
                   </div>

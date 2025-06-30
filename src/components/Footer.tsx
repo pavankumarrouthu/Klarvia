@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-black text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Klarzo</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Klarvia</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               AI-powered mental health support that's affordable, private, and always available. 
@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 mb-4">
-            &copy; {currentYear} Klarzo. All rights reserved. Your mental health matters.
+            &copy; {currentYear} Klarvia. All rights reserved. Your mental health matters.
           </p>
           <p className="text-sm text-gray-500">
             If you're having thoughts of self-harm, please reach out for help immediately. 

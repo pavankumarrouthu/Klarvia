@@ -46,13 +46,13 @@ const ResourcesSection = () => {
   ];
 
   return (
-    <section id="resources" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="resources" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
-            Mental Health <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Resources</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Mental Health <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Resources</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Access our comprehensive library of mental health resources, tools, and educational content 
             designed to support your wellbeing journey.
           </p>
@@ -62,7 +62,7 @@ const ResourcesSection = () => {
           {resources.map((resource, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 animate-fade-in"
+              className="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center space-x-4 mb-6">
@@ -70,17 +70,17 @@ const ResourcesSection = () => {
                   <resource.icon className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">{resource.title}</h3>
+                  <h3 className="text-xl font-semibold text-white">{resource.title}</h3>
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-6">{resource.description}</p>
+              <p className="text-gray-300 mb-6">{resource.description}</p>
               
               <div className="space-y-4">
                 {resource.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border-l-3 border-purple-200 pl-4">
-                    <h4 className="font-medium text-gray-900 mb-1">{item.name}</h4>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                  <div key={itemIndex} className="border-l-3 border-purple-600 pl-4">
+                    <h4 className="font-medium text-white mb-1">{item.name}</h4>
+                    <p className="text-sm text-gray-400">{item.desc}</p>
                   </div>
                 ))}
               </div>

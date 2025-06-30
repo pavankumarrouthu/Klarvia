@@ -42,13 +42,13 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Offerings</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Our <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Offerings</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Delivering comprehensive mental health solutions through our AI technology, 
             personalized assessments, and expert-backed resources to improve wellbeing.
           </p>
@@ -58,19 +58,19 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg hover:border-purple-200 transition-all duration-300 animate-fade-in group"
+              className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:shadow-lg hover:border-purple-600 transition-all duration-300 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <service.icon className="w-6 h-6 text-white" />
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-white">{service.title}</h3>
+              <p className="text-gray-300 mb-4">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-500">
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-400">
                     <div className="w-1.5 h-1.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
