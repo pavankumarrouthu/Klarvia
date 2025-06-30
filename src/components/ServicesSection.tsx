@@ -1,55 +1,56 @@
 
-import { Brain, MessageSquare, BarChart3, Shield, Cpu, Lightbulb } from 'lucide-react';
+import { Brain, MessageSquare, BookOpen, Users, Heart, Lightbulb } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Brain,
-      title: "Machine Learning Solutions",
-      description: "Custom ML models tailored to your business needs, from predictive analytics to computer vision.",
-      features: ["Predictive Analytics", "Computer Vision", "NLP Processing"]
-    },
-    {
       icon: MessageSquare,
-      title: "Conversational AI",
-      description: "Intelligent chatbots and virtual assistants that enhance customer experience and support.",
-      features: ["Smart Chatbots", "Voice Assistants", "24/7 Support"]
+      title: "AI Therapy Sessions",
+      description: "Private, guided conversations with our AI therapist to help process emotions and find clarity.",
+      features: ["Voice-based interactions", "Emotion recognition", "24/7 availability", "Progress tracking"]
     },
     {
-      icon: BarChart3,
-      title: "Data Intelligence",
-      description: "Transform raw data into actionable insights with advanced analytics and visualization.",
-      features: ["Real-time Analytics", "Data Visualization", "Business Intelligence"]
+      icon: Brain,
+      title: "Mental Health Assessment",
+      description: "Comprehensive screening tools to understand your current mental wellbeing and create personalized plans.",
+      features: ["Emotional assessment", "Behavioral analysis", "Cognitive evaluation", "Personalized insights"]
     },
     {
-      icon: Shield,
-      title: "AI Security",
-      description: "Protect your AI systems with robust security measures and ethical AI practices.",
-      features: ["Ethical AI", "Data Privacy", "Model Security"]
+      icon: BookOpen,
+      title: "Course Curation",
+      description: "Expert-backed guides and resources to help you understand and improve your mental health through structured learning.",
+      features: ["CBT techniques", "Mindfulness training", "Journaling exercises", "Self-reflection tools"]
     },
     {
-      icon: Cpu,
-      title: "AI Infrastructure",
-      description: "Scalable cloud infrastructure and deployment solutions for AI applications.",
-      features: ["Cloud Deployment", "Auto Scaling", "Performance Optimization"]
+      icon: Users,
+      title: "Psychologist Connect",
+      description: "Connect with licensed mental health professionals when you need human support and specialized care.",
+      features: ["Licensed therapists", "Video consultations", "Crisis support", "Specialized therapy"]
+    },
+    {
+      icon: Heart,
+      title: "Crisis Support",
+      description: "Immediate support and resources available 24/7 for mental health emergencies and crisis situations.",
+      features: ["24/7 crisis line", "Emergency resources", "Safety planning", "Immediate intervention"]
     },
     {
       icon: Lightbulb,
-      title: "AI Consulting",
-      description: "Strategic guidance to help you identify and implement the right AI solutions.",
-      features: ["Strategy Planning", "ROI Analysis", "Implementation Roadmap"]
+      title: "Wellness Insights",
+      description: "Personalized insights and recommendations based on your mental health patterns and progress.",
+      features: ["Pattern recognition", "Mood tracking", "Progress analytics", "Wellness recommendations"]
     }
   ];
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Our <span className="gradient-text">AI Services</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+            Our <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Offerings</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Comprehensive AI solutions designed to transform your business operations and drive innovation
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Delivering comprehensive mental health solutions through our AI technology, 
+            personalized assessments, and expert-backed resources to improve wellbeing.
           </p>
         </div>
 
@@ -57,20 +58,20 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="ai-card group hover:scale-105 transition-all duration-300 animate-fade-in"
+              className="bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg hover:border-purple-200 transition-all duration-300 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 h-12 bg-gradient-to-r from-ai-primary to-ai-secondary rounded-lg flex items-center justify-center mb-4 group-hover:animate-glow">
-                <service.icon className="w-6 h-6 text-black" />
+              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <service.icon className="w-6 h-6 text-white" />
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-white">{service.title}</h3>
-              <p className="text-gray-400 mb-4">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
+              <p className="text-gray-600 mb-4">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-300">
-                    <div className="w-1.5 h-1.5 bg-ai-primary rounded-full mr-3"></div>
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-500">
+                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
